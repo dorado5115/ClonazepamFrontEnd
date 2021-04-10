@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../App.css';
 
 class SignIn extends Component{
     render(){
@@ -17,7 +18,7 @@ class SignIn extends Component{
           <div>
             <button>Create Account</button>
           </div>
-          <text>You have already <a href="#">an Account</a></text>
+          <text>You have already <a href="logIn">an Account</a></text>
         </form>
       );
     }

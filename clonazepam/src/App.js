@@ -10,28 +10,26 @@ import {
   Link
 } from "react-router-dom";
 
-import SignIn from "./components/SignIn"
+import SignUp from "./components/SignUp"
 import LogIn from "./components/LogIn"
-
-import { render } from 'react-dom';
 
 function App() {
   return (
   <Router>
-
+    <section class="">
     <nav>
       <ul>
         <li>
-          <Link to="/signIn">SignIn</Link>
+          <Link to="/signUp">SignUp</Link>
         </li>
         <li>
           <Link to="/logIn">LogIn</Link>
         </li>
       </ul>
     </nav>
-
+    </section>
     <Switch>
-      <Route path="/signIn">
+      <Route path="/signUp">
         <SignIn />
       </Route>
       <Route path="/logIn">
@@ -41,7 +39,5 @@ function App() {
   </Router>
   );
 }
-
-
 
 export default App;
