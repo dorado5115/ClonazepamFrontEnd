@@ -1,7 +1,6 @@
 import './App.css';
-//import { NavigationContainer } from '@react-navigation/native';
-//import { createStackNavigator } from '@react-navigation/stack';
-//import { createNavigatorFactory, useNavigationBuilder } from '@react-navigation/core';
+
+import { LogIn, SignUp, Home } from "./components"
 
 import {
   BrowserRouter as Router,
@@ -10,13 +9,11 @@ import {
   Link
 } from "react-router-dom";
 
-import SignUp from "./components/SignUp"
-import LogIn from "./components/LogIn"
 
 function App() {
   return (
   <Router>
-    <section class="">
+    {/* <section class="">
     <nav>
       <ul>
         <li>
@@ -27,13 +24,16 @@ function App() {
         </li>
       </ul>
     </nav>
-    </section>
+    </section> */}
     <Switch>
       <Route path="/signUp">
-        <SignIn />
+        <SignUp />
       </Route>
       <Route path="/logIn">
         <LogIn />
+      </Route>
+      <Route path="/home">
+        <Home />
       </Route>
     </Switch>
   </Router>

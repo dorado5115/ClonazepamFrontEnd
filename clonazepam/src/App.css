@@ -31,3 +31,75 @@
     transform: rotate(360deg);
   }
 }
+
+.signUp{
+text-align: center;
+  padding: 53px;
+  margin: 1px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.userNameSp{
+  border-width: 1px;
+  border-radius: 47px;
+  border-color: #969595;
+  padding: 14px;
+  margin: 10px 0px;
+}
+
+.passWordSp{
+  border-width: 1px;
+  border-radius: 47px;
+  border-color: #969595;
+  padding: 14px;
+  margin: 10px 0px;
+}
+
+.passWordSp2{
+  border-width: 1px;
+  border-radius: 47px;
+  border-color: #969595;
+  padding: 14px;
+  margin: 10px 0px;
+}
+
+.buttonSp{
+  background-color: #7868E6;
+  color: white;
+  border-width: 1px;
+  border-radius: 47px;
+  border-color: #ffffff;
+  padding: 14px;
+  margin: 10px 0px;
+}
+
+.LogIn{
+  padding: 5px;
+  margin: 1px;
+  display: flex;
+  justify-content: flex-start;
+}
+.userNameLi{
+  border-width: 1px;
+  border-radius: 47px;
+  border-color: #969595;
+  padding: 14px;
+  margin: 10px 0px;
+}
+.passWordLi{
+  border-width: 1px;
+  border-radius: 47px;
+  border-color: #969595;
+  padding: 14px;
+  margin: 10px 0px;
+}
+.buttonLi{
+  background-color: #7868E6;
+  color: white;
+  border-width: 1px;
+  border-radius: 47px;
+  border-color: #ffffff;
+  padding: 14px;
+  margin: 10px 0px;
+}
