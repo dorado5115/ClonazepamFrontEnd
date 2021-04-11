@@ -11,8 +11,9 @@ function Graph() {
 }
 
 const CHART = document.getElementById("lineChart");
-console.log(CHART);
-let lineChart = new Chart(CHART, {
+if(window.lineChart != undefined)
+window.lineChart.destroy();
+window.lineChart = new Chart(CHART, {
     type: 'line',
     data: {
         labels: ["Monday", "Tuesday", "Wendnesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -35,10 +36,12 @@ let lineChart = new Chart(CHART, {
             pointHoverBorderWith: 2,
             pointRadius: 1,
             pointHitRadius: 10,
-            data: [65,59,79,81,56,55,40],
+            data: [60,40,79,75,56,55,40],
         }
 
         ]
     }
 });
+
+
 export default Graph;
