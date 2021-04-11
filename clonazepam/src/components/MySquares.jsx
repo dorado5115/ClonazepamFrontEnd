@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class MySquares extends Component {
     render() {
         return(
-            <div>
+            <div className="my-square">
                 <div className="my-date">
                     <text>Yesterday 5:00 AM</text>
                 </div>

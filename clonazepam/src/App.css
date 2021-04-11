@@ -38,10 +38,10 @@ strong{
 
 .signUp{
   font-weight: bolder;
-background-image: url('img/computadora2.0.png');
+  background-image: url('img/computadora2.0.png');
   /* background-color: rgba(241, 237, 237, 0.986); */
   background-repeat: no-repeat;
-background-size: cover;
+  background-size: cover;
   /* background-color: rgba(241, 237, 237, 0.603); */
   text-align: center;
   /* padding: 53px; */
@@ -58,9 +58,8 @@ background-size: cover;
 }
 
 .SignUpBody{
-  border-width: 100px;
-  border-color: #282c34;
-  box-shadow: #616161;
+  border: 115px;
+  border-color:black;
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
   height: 100%;
@@ -78,12 +77,11 @@ background-size: cover;
 }
 
 .buttonSp{
+  border-width: 0;
   font-weight: bolder;
   background-color: #7868E6;
   color: white;
-  border-width: 0;
   border-radius: 47px;
-  border-color: #ffffff;
   padding: 25px 115px;
   margin: 10px -8px;
   outline: none;
@@ -93,28 +91,24 @@ background-size: cover;
   margin: 20px 0;
 }
 
-.heroName{
-  font-size: 50px;
-  color: rgb(217, 85, 250);
-  align-items: center;
-  padding-left: 300px;
-}
 
 .logIn{
   font-weight: bolder;
-  background-image: url('https://www.ecestaticos.com/imagestatic/clipping/80d/b9e/80db9ed5b8bb99e3970ada010b5ac06d.jpg');
+  background-image: url('img/computadora2.0.png');
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   display: flex;
   justify-content: flex-start;
-  padding: 155px 0 162px 55px;
+  padding: 100px 0 110px 5px;
 }
   .logInBody{
+    border: 115px;
+    border-color:black;
     border-radius: 30px;
-  background-color: rgba(241, 237, 237, 0.603);
-  height: 100%;
-  padding: 50px 60px 0px 60px;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    padding: 50px 60px 0px 60px;
   }
   .bro{
     margin: 20px 0;
@@ -124,7 +118,7 @@ background-size: cover;
     height: 30%;
   }
   .userNameLi{
-    ftext-align: center;
+    text-align: center;
     border-width: 1px;
     border-radius: 47px;
     border-color: #969595;
@@ -148,7 +142,7 @@ background-size: cover;
     border-width: 0;
     border-radius: 47px;
     border-color: #ffffff;
-    padding: 25px 115px;
+    padding: 25px 95px;
     margin: 10px -8px;
     outline: none;
   }

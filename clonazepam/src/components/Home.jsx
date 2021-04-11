@@ -15,6 +15,9 @@ class Home extends Component {
                 {/*Messages square*/}
                 <EileenSquare />
                 <EileenSquare />
+                <EileenSquare />
+                <EileenSquare />
+                <MySquares />
                 <MySquares />
             </div>
                <div className="message-box">
