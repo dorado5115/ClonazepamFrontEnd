@@ -9,7 +9,7 @@
     /* padding: 53px; */
     display: flex;
     justify-content: flex-start;
-    padding: 50px 0 49px 55px;
+    padding: 50px 0 25px 55px;
     /* object-fit: cover; */
   }
   .imgSu{
@@ -23,6 +23,7 @@
     background-color: rgb(255, 255, 255);
     padding: 50px 60px 0px 60px;
   }
+
   .userNameSp{
     font-weight: bolder;
     text-align: center;
@@ -32,6 +33,7 @@
     margin: 10px 0px;
     outline: none;
   }
+  
   .buttonSp{
     border-width: 0;
     font-weight: bolder;
@@ -41,17 +43,15 @@
     padding: 25px 115px;
     margin: 10px -8px;
     outline: none;
-  
   }
   
   .heroNames{
     font-weight: bolder;
     text-transform: uppercase;
-    line-height: 60px;
+    line-height: 80px;
     color: white;
     font-size: 60px;
-    padding-left: 100px;
-    padding-top: 100px;
+    padding: 100px 100px 0 100px;
   }
   
   .yha{
