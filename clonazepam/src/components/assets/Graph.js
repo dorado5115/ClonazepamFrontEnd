@@ -36,7 +36,7 @@ window.lineChart = new Chart(CHART, {
             pointHoverBorderWith: 2,
             pointRadius: 1,
             pointHitRadius: 10,
-            data: [60,40,79,75,56,55,40],
+            data: [60,10,79,75,56,55,40],
         }
 
         ]
