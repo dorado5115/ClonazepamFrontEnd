@@ -26,6 +26,10 @@ class LogIn extends Component{
            </div>
           </form>
         </div>
+        <div className="heroName">
+              <h1>"Be <strong>yourself</strong> and </h1>
+              <h1>feel <strong>mood</strong>,</h1>
+            </div>
     </section>
   );
  }

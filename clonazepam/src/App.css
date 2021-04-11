@@ -77,11 +77,13 @@ strong{
 
 }
 
-.heroName{
-  line-height: 50px;
+.heroNames{
+  font-weight: bolder;
+  text-transform: uppercase;
+  line-height: 60px;
   color: white;
-  font-size: 70px;
-  padding-left: 300px;
+  font-size: 60px;
+  padding-left: 100px;
   padding-top: 100px;
 }
 
@@ -131,4 +133,13 @@ strong{
   padding: 25px 115px;
   margin: 10px -8px;
   outline: none;
+}
+
+.heroName{
+  text-transform: uppercase;
+  line-height: 50px;
+  color: white;
+  font-size: 70px;
+  padding-left: 300px;
+  padding-top: 100px;
 }

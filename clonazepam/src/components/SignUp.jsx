@@ -29,9 +29,9 @@ class SignIn extends Component{
               </div>
               </form>
             </div>
-            <div className="heroName">
-              <h1>Be <strong>yourself</strong> and </h1>
-              <h1>feel <strong>mood</strong></h1>
+            <div className="heroNames">
+              <h1>You will <strong>choose</strong> the </h1>
+              <h1><strong>best</strong> way for your <strong>mind</strong>"</h1>
             </div>
         </section>
       );

@@ -7,8 +7,7 @@
 .left-col {
     height: 30rem;
     width: 45rem;
-    margin-top: 50px;
-    margin-right: 50px;
+    margin: 50px 50px 0 50px;
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -19,9 +18,21 @@
 .right-col {
     height: 30rem;
     width: 29rem;
-    margin-top: 50px;
+    margin: 50px 50px 0 50px;
     background-color: white;
     border-radius: 10px;
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 830px) {
+    .information {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+#timelineDiv {
+    width: 100%;
 }

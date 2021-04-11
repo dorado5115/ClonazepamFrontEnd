@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import '../static/Analytics.css';
 import '../static/Navbar.css';
 
-import { Navbar } from "./assets"
-
+import { Navbar, Graph } from "./assets"
+{/*import { Navbar, Graph } from "./assets"*/}
 
 class Analytics extends Component {
     render(){
@@ -12,7 +12,7 @@ class Analytics extends Component {
             <Navbar email="example@gmail.com"/>
             <div className="information">
                 <div className="left-col">
-                    <text>Hello</text>
+                    <Graph />
                 </div>
                 <div className="right-col">
                     <text>Wenas</text>
