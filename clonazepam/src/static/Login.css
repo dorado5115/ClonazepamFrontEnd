@@ -38,6 +38,10 @@
     outline: none;
 }
 
+.userNameLi:focus {
+    border-color: #7868E6;
+}
+
 .buttonLi{
     border-width: 0;
     font-weight: bolder;
@@ -47,7 +51,9 @@
     padding: 25px 115px;
     margin: 10px -8px;
     outline: none;
+    cursor: pointer;
 }
+
 
 .heroName{
     text-transform: uppercase;
@@ -57,9 +63,44 @@
     padding: 0 100px 0 100px;
 }
 
-@media (max-width: 500px) {
-    .logInBody{
-        height: 100%;
-        padding: 30px 40px 0px 40px;
+.bro text {
+    color: #B3B3B3;
+    font-weight: normal;
+}
+
+.bro a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #7868E6;
+}
+
+@media (max-width: 1120px) {
+    .logIn{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
+
+    .heroName{
+        padding: 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .logIn{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 10px;
+    }
+
+    .heroName{
+        padding: 0;
+        font-size: 50px;
+    }
+
+    .logIn{
+        padding: 0;
+    }
+    
 }

@@ -19,7 +19,7 @@ class LogIn extends Component{
             <input className="userNameLi" type="text" placeholder="Password"/>
            </div>
           <div>
-            <button className= "buttonLi">Create Account</button>
+            <button className= "buttonLi" type="submit">Create Account</button> {/*AGREGAR BACKEND CUENTA */}
            </div>
           <div className="bro" >
           <text>You don't have an Account?<a href="SignUp"> Create your acount</a></text>

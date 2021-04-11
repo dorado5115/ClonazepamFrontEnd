@@ -11,18 +11,18 @@
     justify-content: flex-start;
     padding: 50px 0 25px 55px;
     /* object-fit: cover; */
-  }
-  .imgSu{
+}
+.imgSu{
     width: 30%;
     height: 30%;
-  }
-  .SignUpBody{
+}
+.SignUpBody{
     border: 115px;
     border-color:black;
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
     padding: 50px 60px 0px 60px;
-  }
+}
 
   .userNameSp{
     font-weight: bolder;
@@ -32,9 +32,13 @@
     padding: 25px 75px;
     margin: 10px 0px;
     outline: none;
-  }
+}
   
-  .buttonSp{
+.userNameSp:focus {
+    border-color: #7868E6;
+}
+  
+.buttonSp{
     border-width: 0;
     font-weight: bolder;
     background-color: #7868E6;
@@ -43,17 +47,58 @@
     padding: 25px 115px;
     margin: 10px -8px;
     outline: none;
-  }
+    cursor: pointer;
+}
   
-  .heroNames{
+.heroNames{
     font-weight: bolder;
     text-transform: uppercase;
     line-height: 80px;
     color: white;
     font-size: 60px;
     padding: 100px 100px 0 100px;
-  }
+}
   
-  .yha{
+.yha{
     margin: 20px 0;
-  }
+}
+
+.yha a {
+    text-decoration: none;
+    color: #7868E6;
+    font-weight: bold;
+}
+
+.yha text {
+    color: #B3B3B3;
+    font-weight: normal;
+}
+
+@media(max-width: 1310px) {
+    .signUp{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .signUp{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .heroNames{
+        padding: 0;
+        font-size: 50px;
+    }
+
+    .signUp{
+        padding: 0;
+    }
+    
+}

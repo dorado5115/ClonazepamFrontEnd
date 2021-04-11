@@ -22,10 +22,10 @@ class SignIn extends Component{
                 <input className="userNameSp" type="text" placeholder="Confirm Password"/>
               </div>
               <div>
-                <button className= "buttonSp">Create Account</button>
+                <button className= "buttonSp" type="submit">Create Account</button> {/*AGREGAR CUENTA BACKEND*/}
               </div>
               <div className="yha" >
-              <text>You have already <a href="logIn">an Account</a></text>
+                <text>You have already <a href="logIn">an Account</a></text>
               </div>
               </form>
             </div>
