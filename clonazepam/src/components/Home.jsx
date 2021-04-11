@@ -4,24 +4,69 @@ import '../static/Home.css';
 import '../static/Navbar.css';
 import { IoPaperPlane } from "react-icons/io5";
 
+import axios from 'axios'
 
 class Home extends Component {
+    state = {
+        message: "",
+        messages: [],
+        response: null
+    }
+
+    async componentDidMount() {
+        let token = localStorage.getItem("sessionToken")
+
+        if (!token)
+            window.location = '/login'
+
+        const { data } = await axios.get("https://eileen-api.herokuapp.com/messages", {
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+        })
+
+        this.setState({ messages: data.messages })
+
+        console.log(this.state.messages)
+    }
+
+    sendMessage = async () => {
+        let token = localStorage.getItem("sessionToken")
+        let { message } = this.state
+
+        const { data } = await axios.post("https://eileen-api.herokuapp.com/messages", { 
+            message: {
+                body: message
+            }
+        }, { headers: { Authorization: `Bearer ${token}` } })
+
+        
+        this.setState({ messages: [...this.state.messages, { body: this.state.message, created_at: Date.now() } ] })
+        this.setState({ response: data.response })
+        
+        document.getElementById('chat-field').value = ''
+        this.setState({ message: '' })
+    }
+
     render(){
       return (
           <div>
-            <Navbar email="example@gmail.com"/>
-            <div className="messages-body">
-                {/*Messages square*/}
-                <EileenSquare  message="Hola "/>
-                <EileenSquare  message="Hasta el infinito y mas alla"/>
-                <EileenSquare  message="wenas wenas"/>
-                <EileenSquare  message="is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"/>
-                <MySquares  message="uy mamasita"/>
-                <MySquares  message="ahora estudia derecho"/>
-            </div>
+                <Navbar />
+                    <div className="messages-body">
+                    <div>
+                        {
+                            this.state.messages.map(message => <MySquares date={message.created_at} message={message.body} />)
+                        }
+                    </div>
+                    <div>
+                        {
+                            this.state.response ? <EileenSquare message={this.state.response} /> : null
+                        }
+                    </div>
+                    </div>
                <div className="message-box">
-                    <input type="text" name="" className="message-txt" placeholder="Tell something to Eileen..."/>
-                    <a className="search-btn">
+                    <input type="text" onChange={e => this.setState({ message: e.target.value })} className="message-txt" id="chat-field" placeholder="Tell something to Eileen..."/>
+                    <a className="search-btn" onClick={this.sendMessage}>
                         <IoPaperPlane />
                     </a>
                 </div>

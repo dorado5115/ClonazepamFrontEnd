@@ -5,7 +5,7 @@ class MySquares extends Component {
         return(
             <div className="my-square">
                 <div className="my-date">
-                    <text>Yesterday 5:00 AM</text>
+                    <text>{(new Date(this.props.date)).toLocaleDateString('en-US')}</text>
                 </div>
                 <div className="square-mine">
                     <div className="square">

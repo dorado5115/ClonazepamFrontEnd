@@ -9,8 +9,7 @@ class Navbar extends Component {
                         <text>Eileen</text>
                         <a href="/home">Chat</a>
                         <a href="/analytics">Analytics</a>
-                        <a>{this.props.email}</a>
-                        <a>Log Out</a>
+                        <a onClick={() => {localStorage.clear(); window.location = '/login'}}>Log Out</a>
                     </div>
                 </div>
             </div>

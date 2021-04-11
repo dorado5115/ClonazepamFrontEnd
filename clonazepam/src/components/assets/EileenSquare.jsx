@@ -5,7 +5,7 @@ class EileenSquare extends Component {
         return(
             <div>
                 <div className="eileen-date">
-                    <text>Yesterday 5:00 AM</text>
+                    <text>{(new Date()).toLocaleDateString('en-US')}</text>
                 </div>
                 <div className="square-eileen">
                     <div className="square">

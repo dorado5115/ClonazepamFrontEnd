@@ -3,23 +3,59 @@ import '../static/SignUp.css';
 
 import logo from '../img/logo.png'
 
+import axios from 'axios'
+
 class SignIn extends Component{
+
+  state = {
+    email: '',
+    password: '',
+    confirmPassword: ''
+  }
+
+  componentDidMount() {
+    let token = localStorage.getItem('sessionToken')
+
+    if (token)
+      window.location = '/home'
+  }
+
+  async signOut (e) {
+    e.preventDefault()
+    e.stopPropagation()
+
+    let { email, password, confirmPassword } = this.state
+
+    const { data } = await axios.post("https://eileen-api.herokuapp.com/sign_up", { 
+      email,
+      password,
+      password_confirmation: confirmPassword
+    })
+
+    if (data.errors[0]) {
+      alert(data.errors[0])
+    } else {
+      alert('Account created successfully')
+      window.location = '/login'
+    }
+  }
+
     render(){
       return (
-        <section className = "signUp">
+        <section className="signUp">
           <div className="SignUpBody">
-            <form action="">
+            <form action="" onSubmit={e => this.signOut(e)}>
               <div>
                 <img className="imgSu" src={logo}></img> 
               </div>
               <div>
-                <input className="userNameSp" type="text" placeholder="Email"/>
+                <input className="userNameSp" onChange={e => this.setState({ email: e.target.value })} type="email" placeholder="Email"/>
               </div>
               <div>
-                <input className="userNameSp" type="text" placeholder="Password"/>
+                <input className="userNameSp" onChange={e => this.setState({ password: e.target.value })} type="password" placeholder="Password"/>
               </div>
               <div>
-                <input className="userNameSp" type="text" placeholder="Confirm Password"/>
+                <input className="userNameSp" onChange={e => this.setState({ confirmPassword: e.target.value })} type="password" placeholder="Confirm Password"/>
               </div>
               <div>
                 <button className= "buttonSp" type="submit">Create Account</button> {/*AGREGAR CUENTA BACKEND*/}

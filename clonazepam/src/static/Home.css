@@ -5,8 +5,10 @@
     margin: 0 22rem 0 22rem;
     height: 30rem;
     overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
-
 .message-box {
     margin-top: 17rem;
     position: absolute;
