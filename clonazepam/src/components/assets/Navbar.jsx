@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../Home.css';
 
 class Navbar extends Component {
     render() {
@@ -8,9 +7,9 @@ class Navbar extends Component {
                 <div className="inside-navbar">
                     <div className="right-navbar">
                         <text>Eileen</text>
-                        <a href="">Chat</a>
-                        <a href="">Analytics</a>
-                        <a>email@hotmail.com</a>
+                        <a href="/home">Chat</a>
+                        <a href="/analytics">Analytics</a>
+                        <a>{this.props.email}</a>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ class MySquares extends Component {
                 </div>
                 <div className="square-mine">
                     <div className="square">
-                        <text>Wenas</text>
+                        <text>{this.props.message}</text>
                     </div>
                 </div>
             </div>

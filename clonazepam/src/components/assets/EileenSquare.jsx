@@ -9,11 +9,10 @@ class EileenSquare extends Component {
                 </div>
                 <div className="square-eileen">
                     <div className="square">
-                        <text>Hola</text>
+                        <text>{this.props.message}</text>
                     </div>
                 </div>
                 <div className="empty">
-
                 </div>
             </div>
         );

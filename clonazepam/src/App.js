@@ -1,6 +1,6 @@
 import './App.css';
 
-import { LogIn, SignUp, Home } from "./components"
+import { LogIn, SignUp, Home, Analytics } from "./components"
 
 import {
   BrowserRouter as Router,
@@ -34,6 +34,9 @@ function App() {
       </Route>
       <Route path="/home">
         <Home />
+      </Route>
+      <Route path="/analytics">
+        <Analytics />
       </Route>
     </Switch>
   </Router>
