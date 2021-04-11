@@ -1,35 +1,34 @@
   
 import React, { Component } from 'react';
 import '../App.css';
+import logo from '../img/logo.png'
 
 class LogIn extends Component{
   render(){
     return (
-    <section className = "logIn">
-      <div class="logIn">
+      <section className = "logIn">
+      <div className="logInBody">
         <form action="">
-            <div>
-              <img src="img/Sin título-1.png"></img> 
-            </div>
-            <text>LogIn</text>
-            <div>
-              <input class ="userNameLi" type="text" placeholder="Username"/>
-            </div>
-            <div>
-              <input class ="passWordLi" type="text" placeholder="Password"/>
-            </div>
-            <div>
-              <button class = "buttonLi">Sing Up</button>
-            </div>
-            <text class="createAcount">You don't have an Account?<a href="/signUp"> Create one</a></text>
+          <div>
+            <img className="imgLi" src={logo}></img> 
+           </div>
+          <div>
+            <input className="userNameLi" type="text" placeholder="Email"/>
+           </div>
+          <div>
+            <input className="userNameLi" type="text" placeholder="Password"/>
+           </div>
+          <div>
+            <button className= "buttonLi">Create Account</button>
+           </div>
+          <div className="bro" >
+          <text>You don't have an Account?<a href="logIn">Create your acount</a></text>
+           </div>
           </form>
         </div>
-        <div class="imgHero">
-          <img src="img/piqsels.com-id-srsqr.jpg" atl="person"></img>
-        </div>
     </section>
-    );
-  }
+  );
+ }
 }
 
 export default LogIn;

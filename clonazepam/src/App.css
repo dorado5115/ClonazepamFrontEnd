@@ -33,73 +33,107 @@
 }
 
 .signUp{
-text-align: center;
-  padding: 53px;
-  margin: 1px;
+  font-weight: bolder;
+  background-image: url('https://www.ecestaticos.com/imagestatic/clipping/80d/b9e/80db9ed5b8bb99e3970ada010b5ac06d.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: rgba(241, 237, 237, 0.603); */
+  text-align: center;
+  /* padding: 53px; */
   display: flex;
   justify-content: flex-start;
+  padding: 155px 0 162px 55px;
+  /* object-fit: cover; */
+
+}
+
+.imgSu{
+  width: 30%;
+  height: 30%;
+}
+
+.SignUpBody{
+  border-radius: 30px;
+  background-color: rgba(241, 237, 237, 0.603);
+  height: 100%;
+  padding: 50px 60px 0px 60px;
 }
 
 .userNameSp{
-  border-width: 1px;
+  font-weight: bolder;
+  text-align: center;
+  border: solid 2px #969595;
   border-radius: 47px;
-  border-color: #969595;
-  padding: 14px;
+  padding: 25px 75px;
   margin: 10px 0px;
-}
-
-.passWordSp{
-  border-width: 1px;
-  border-radius: 47px;
-  border-color: #969595;
-  padding: 14px;
-  margin: 10px 0px;
-}
-
-.passWordSp2{
-  border-width: 1px;
-  border-radius: 47px;
-  border-color: #969595;
-  padding: 14px;
-  margin: 10px 0px;
+  outline: none;
 }
 
 .buttonSp{
+  font-weight: bolder;
   background-color: #7868E6;
   color: white;
-  border-width: 1px;
+  border-width: 0;
   border-radius: 47px;
   border-color: #ffffff;
-  padding: 14px;
-  margin: 10px 0px;
+  padding: 25px 115px;
+  margin: 10px -8px;
+  outline: none;
 }
 
-.LogIn{
-  padding: 5px;
-  margin: 1px;
+.yha{
+  margin: 20px 0;
+}
+
+.logIn{
+  font-weight: bolder;
+  background-image: url('https://p2.piqsels.com/preview/26/861/290/desk-hat-macbook-man.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: rgba(241, 237, 237, 0.603); */
+  text-align: center;
+  /* padding: 53px; */
   display: flex;
   justify-content: flex-start;
-}
-.userNameLi{
-  border-width: 1px;
-  border-radius: 47px;
-  border-color: #969595;
-  padding: 14px;
-  margin: 10px 0px;
-}
-.passWordLi{
-  border-width: 1px;
-  border-radius: 47px;
-  border-color: #969595;
-  padding: 14px;
-  margin: 10px 0px;
-}
-.buttonLi{
-  background-color: #7868E6;
-  color: white;
-  border-width: 1px;
-  border-radius: 47px;
-  border-color: #ffffff;
-  padding: 14px;
-  margin: 10px 0px;
-}
+  padding: 155px 0 162px 55px;
+  }
+  .logInBody{
+    padding: 250px 213px 10px 213px;
+  }
+  .bro{
+    margin: 20px 0;
+  }
+  .imgLi{
+    width: 30%;
+    height: 30%;
+  }
+  .userNameLi{
+    text-align: center;
+    border-width: 1px;
+    border-radius: 47px;
+    border-color: #969595;
+    padding: 25px 75px;
+    margin: 10px 0px;
+    outline: none;
+  }
+  .passWordLi{
+    text-align: center;
+    border-width: 1px;
+    border-radius: 47px;
+    border-color: #969595;
+    padding: 25px 75px;
+    margin: 10px 0px;
+    outline: none;
+  }
+  .buttonLi{
+    font-weight: bolder;
+    background-color: #7868E6;
+    color: white;
+    border-width: 0;
+    border-radius: 47px;
+    border-color: #ffffff;
+    padding: 25px 115px;
+    margin: 10px -8px;
+    outline: none;
+  }
+  

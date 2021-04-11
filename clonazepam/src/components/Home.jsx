@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
-import '../index.css';
+import '../Home.css';
+import Navbar from "./Navbar";
+import { IoPaperPlane } from "react-icons/io5";
 
-class Home extends Component{
+
+class Home extends Component {
     render(){
       return (
-            <section className = "right-col">
-                <div>
-                    <h3>Eileen Chat</h3>
+          <div>
+            <Navbar />
+            <div className="messages-body"></div>
+               <div className="message-box">
+                    <input type="text" name="" className="message-txt" placeholder="Type Your Message..."/>
+                    <a className="search-btn">
+                        <IoPaperPlane />
+                    </a>
                 </div>
-                <div>
-                    <h3>Hello</h3>
-                </div>
-                <div className="messages">
-                    <input placeholder="Type your message and hit Enter" type="text"/>
-                </div>
-            </section>
-      );
+           </div>
+        );
     }
 }
 
