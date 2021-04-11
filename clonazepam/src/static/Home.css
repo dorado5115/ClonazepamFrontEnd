@@ -28,7 +28,6 @@
 /*#B8B5FC - clarito*/
 /*background: rgba(184, 181, 252, 0.5); - clarito*/
 /*#7868E6 - fuerte*/
-
    
 .search-btn {
     float: right;
@@ -112,3 +111,138 @@
     padding: 30px;
     font-size: 17px;
 }
+
+/*ScrollBar*/
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #192336; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7868E6; 
+}
+
+@media (max-width: 1300px) {
+    .message-box {
+        width: 42rem;
+    }
+
+    .message-txt {
+        width: 80%;
+    }
+
+    .messages-body {
+        margin: 0 19rem 0 19rem;
+        height: 30rem;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 1100px) {
+    .message-box {
+        width: 37rem;
+    }
+
+    .message-txt {
+        width: 80%;
+    }
+
+    .messages-body {
+        margin: 0 15rem 0 15rem;
+        height: 30rem;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 900px) {
+    .message-box {
+        width: 26rem;
+    }
+
+    .message-txt {
+        width: 70%;
+    }
+
+    .messages-body {
+        margin: 0 14rem 0 14rem;
+        height: 30rem;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 850px) {
+    .message-box {
+        width: 33rem;
+    }
+
+    .message-txt {
+        width: 70%;
+    }
+
+    .messages-body {
+        margin: 0 9rem 0 9rem;
+        height: 30rem;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 710px) {
+    .message-box {
+        width: 33rem;
+    }
+
+    .message-txt {
+        width: 70%;
+    }
+
+    .messages-body {
+        margin: 0 5rem 0 5rem;
+        height: 30rem;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 590px) {
+    .message-box {
+        width: 30rem;
+    }
+
+    .message-txt {
+        width: 70%;
+    }
+
+    .messages-body {
+        margin: 0 3rem 0 3rem;
+        height: 30rem;
+        overflow-y: scroll;
+    }
+}
+ 
+
+@media (max-width: 500px) {
+    .message-box {
+        width: 29rem;
+    }
+
+    .message-txt {
+        width: 70%;
+    }
+
+    .messages-body {
+        margin: 0 1rem 0 1rem;
+        height: 30rem;
+        overflow-y: scroll;
+    }
+}
+  

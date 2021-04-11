@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import { Navbar, EileenSquare, MySquares } from "./assets"
 import '../static/Home.css';
 import '../static/Navbar.css';
-import { Navbar, EileenSquare, MySquares } from "./assets"
 import { IoPaperPlane } from "react-icons/io5";
 
 

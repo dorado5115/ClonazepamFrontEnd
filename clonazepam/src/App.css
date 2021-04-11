@@ -32,7 +32,7 @@ strong{
 }
 .signUp{
   font-weight: bolder;
-  background-image: url('img/computadora2.0.png');
+  background-image: url('img/compuOpaco.png');
   /* background-color: rgba(241, 237, 237, 0.986); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,7 +80,7 @@ strong{
 }
 .logIn{
   font-weight: bolder;
-  background-image: url('img/computadora2.0.png');
+  background-image: url('img/compuOpaco.png');
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;

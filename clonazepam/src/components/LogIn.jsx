@@ -22,7 +22,7 @@ class LogIn extends Component{
             <button className= "buttonLi">Create Account</button>
            </div>
           <div className="bro" >
-          <text>You don't have an Account?<a href="SignUp"> Create your acount</a></text>
+          <text>You don't have an Account?<a href="SignU"> Create your acount</a></text>
            </div>
           </form>
         </div>

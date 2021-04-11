@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import GiHamburgerMenu from 'react-icons/io5';
 
 class Navbar extends Component {
     render() {
@@ -10,6 +11,7 @@ class Navbar extends Component {
                         <a href="/home">Chat</a>
                         <a href="/analytics">Analytics</a>
                         <a>{this.props.email}</a>
+                        <a>Log Out</a>
                     </div>
                 </div>
             </div>
