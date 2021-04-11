@@ -1,34 +1,29 @@
-.logIn{
+.signUp{
     font-weight: bolder;
     background-image: url('../img/compuOpaco.png');
+    /* background-color: rgba(241, 237, 237, 0.986); */
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-color: rgba(241, 237, 237, 0.603); */
     text-align: center;
+    /* padding: 53px; */
     display: flex;
     justify-content: flex-start;
-    padding: 155px 0 32px 55px;
-}
-
-.logInBody{
+    padding: 50px 0 49px 55px;
+    /* object-fit: cover; */
+  }
+  .imgSu{
+    width: 30%;
+    height: 30%;
+  }
+  .SignUpBody{
     border: 115px;
     border-color:black;
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
-    height: 100%;
-    padding: 30px 40px 0px 40px;
-}
-
-  
-.bro{
-    margin: 20px 0;
-}
-
-.imgLi{
-    width: 30%;
-    height: 30%;
-}
-
-.userNameLi{
+    padding: 50px 60px 0px 60px;
+  }
+  .userNameSp{
     font-weight: bolder;
     text-align: center;
     border: solid 2px #ececec;
@@ -36,9 +31,8 @@
     padding: 25px 75px;
     margin: 10px 0px;
     outline: none;
-}
-
-.buttonLi{
+  }
+  .buttonSp{
     border-width: 0;
     font-weight: bolder;
     background-color: #7868E6;
@@ -47,20 +41,19 @@
     padding: 25px 115px;
     margin: 10px -8px;
     outline: none;
-}
-
-.heroName{
+  
+  }
+  
+  .heroNames{
+    font-weight: bolder;
     text-transform: uppercase;
-    line-height: 50px;
+    line-height: 60px;
     color: white;
-    font-size: 70px;
-    padding-left: 300px;
+    font-size: 60px;
+    padding-left: 100px;
     padding-top: 100px;
-}
-
-@media (max-width: 500px) {
-    .logInBody{
-        height: 100%;
-        padding: 30px 40px 0px 40px;
-    }
-}
+  }
+  
+  .yha{
+    margin: 20px 0;
+  }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../static/SignUp.css';
 
 import logo from '../img/logo.png'
 
