@@ -52,16 +52,11 @@ body {
 
 /*MESSAGES*/
 .messages-body {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: red;
+    grid-template-rows: 130px 1fr;
+   /* background-color: red;*/
     margin: 0 22rem 0 22rem;
     height: 30rem;
-}
-
-.messages-bar {
-    height: 100%;
+    overflow-y: scroll;
 }
 
 .message-box {
@@ -70,29 +65,35 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #2f3640;
+    background: #ffffff;
     height: 40px;
     border-radius: 40px;
     padding: 10px;
+    width: 51rem;
 }
 
 .message-box:hover > .search-btn {
-    background: white;
-    color: black;
+    background: #7868E6;
+    color: #B8B5FC;
 }
+
+/*#B8B5FC - clarito*/
+/*background: rgba(184, 181, 252, 0.5); - clarito*/
+/*#7868E6 - fuerte*/
+
    
 .search-btn {
     float: right;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #2f3640;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.4s;
-    color: white;
     cursor: pointer;
+    background: #B8B5FC;
+    color: #7868E6;
 }
    
 .message-txt {
@@ -101,10 +102,60 @@ body {
     outline: none;
     float: left;
     padding: 0;
-    color: white;
-    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
     transition: 0.4s;
     line-height: 40px;
-    width: 44rem;
+    width: 90%;
     font-weight: bold;
+    margin-left: 20px;
+}
+
+/*EILEEN*/
+/*colors: #B8B5FC */
+
+.eileen-date text {
+    color: white;
+    font-size: 15px;
+}
+
+.square {
+    background-color: #B8B5FC;
+    width: 26rem;
+    border-radius: 20px 20px 20px 5px;
+}
+
+.square text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-size: 17px;
+}
+
+/*MyMessages*/
+
+.square-mine {
+    background-color: blueviolet;
+    width: 52rem;
+}
+
+.my-date text {
+    color: white;
+    font-size: 15px;
+}
+
+.square-mine .square {
+    background-color: #7868E6;
+    width: 26rem;
+    border-radius: 20px 20px 5px 20px;
+}
+
+.square-mine .square text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-size: 17px;
 }

@@ -29,9 +29,9 @@ class SignIn extends Component{
               </div>
               </form>
             </div>
-            {/* <div className="imgHero">
-              <img src="https://p2.piqsels.com/preview/26/861/290/desk-hat-macbook-man.jpg" alt="person" width="1300px"></img>
-            </div> */}
+            <div className="heroName">
+              {/* <h1>Be <strong>yourself</strong> omar</h1> */}
+            </div>
         </section>
       );
     }
