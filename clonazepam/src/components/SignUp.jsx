@@ -30,7 +30,8 @@ class SignIn extends Component{
               </form>
             </div>
             <div className="heroName">
-              {/* <h1>Be <strong>yourself</strong> omar</h1> */}
+              <h1>Be <strong>yourself</strong> and </h1>
+              <h1>feel <strong>mood</strong></h1>
             </div>
         </section>
       );

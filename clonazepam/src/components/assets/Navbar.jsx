@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import GiHamburgerMenu from 'react-icons/io5';
 
 class Navbar extends Component {
     render() {

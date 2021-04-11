@@ -74,7 +74,17 @@ strong{
   padding: 25px 115px;
   margin: 10px -8px;
   outline: none;
+
 }
+
+.heroName{
+  line-height: 50px;
+  color: white;
+  font-size: 70px;
+  padding-left: 300px;
+  padding-top: 100px;
+}
+
 .yha{
   margin: 20px 0;
 }
@@ -86,7 +96,7 @@ strong{
   text-align: center;
   display: flex;
   justify-content: flex-start;
-  padding: 155px 0 162px 55px;
+  padding: 155px 0 261px 55px;
 }
 .logInBody{
   border: 115px;

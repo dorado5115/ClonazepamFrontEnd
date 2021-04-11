@@ -9,7 +9,7 @@ class Analytics extends Component {
     render(){
       return (
           <div>
-            <Navbar email="juanaDeAchingarAduMadre@gmail.com"/>
+            <Navbar email="example@gmail.com"/>
             <div className="information">
                 <div className="left-col">
                     <text>Hello</text>
