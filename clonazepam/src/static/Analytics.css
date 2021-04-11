@@ -1,0 +1,27 @@
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-col {
+    height: 30rem;
+    width: 45rem;
+    margin-top: 50px;
+    margin-right: 50px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-col {
+    height: 30rem;
+    width: 29rem;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}

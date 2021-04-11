@@ -8,23 +8,12 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import React from 'react';
 
 
 function App() {
   return (
   <Router>
-    {/* <section class="">
-    <nav>
-      <ul>
-        <li>
-          <Link to="/signUp">SignUp</Link>
-        </li>
-        <li>
-          <Link to="/logIn">LogIn</Link>
-        </li>
-      </ul>
-    </nav>
-    </section> */}
     <Switch>
       <Route path="/signUp">
         <SignUp />
